@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Home from './Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <React.Fragment>
+      <header>
+        <meta name="Little Lemon" content="About Little Lemon"/>
+        <meta name="og:title" content="Little Lemon"/>
+        <meta name="og:description" content="An app of Little Lemon Restaurant"/>
+        <meta name="og:image" content="assets/Logo.svg"/>
+        <meta name="og:image" content="assets/restauranfood.jpg"/>
       </header>
-    </div>
+      <Home/>
+    </React.Fragment>
   );
 }
 
