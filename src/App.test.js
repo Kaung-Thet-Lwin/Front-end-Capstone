@@ -1,8 +1,13 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import BookingMain from './BookingMain';
+import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/jest-globals';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('Returns availableTimes', () => {
+  render(<BookingMain />);
+
+  const timeElement = screen.getByText(/17:00/);
+
+  expect(timeElement).toBeInTheDocument();
 });

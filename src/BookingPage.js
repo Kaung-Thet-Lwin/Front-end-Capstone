@@ -1,9 +1,11 @@
 import React from "react";
+import BookingMain from "./BookingMain";
+import './App.css';
 
 function BookingPage(){
     return(
         <React.Fragment>
-            <h1>B</h1>
+            <BookingMain/>
         </React.Fragment>
     );
 }
