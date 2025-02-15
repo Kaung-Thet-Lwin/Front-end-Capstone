@@ -1,0 +1,20 @@
+.confirmed {
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin-top : 200px;
+    margin-left: 32%;
+    border-radius: 20px;
+    background-color:  #ffc107;
+}
+
+.confirmed h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.confirmed h1 span {
+    color: #343a40;
+    font-weight: bold;
+}
+

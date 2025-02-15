@@ -16,8 +16,7 @@
   font-size: 35px;
   padding: 40px;
   width: auto;
-  transition: color 0.3s,
-  box-shadow 0.3s;
+  transition: color 0.3s, box-shadow 0.3s;
 }
 
 .nav-item:hover{
@@ -26,7 +25,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.HomePage{
+.Header{
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -89,3 +88,4 @@ button:hover {
   padding: auto;
   border-radius: 20px;
 }
+

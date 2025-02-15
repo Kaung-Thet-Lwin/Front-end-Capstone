@@ -4,6 +4,7 @@ import "@testing-library/jest-dom";
 import "@testing-library/jest-dom/jest-globals";
 import BookingForm from "./BookingForm";
 
+
 describe('BookingForm component', () => {
     beforeEach(() => {
         jest.useFakeTimers();
@@ -18,7 +19,7 @@ describe('BookingForm component', () => {
     });
     test('Returns the same value', () => {
         const dispatch = jest.fn();
-        render(<BookingForm timeOptions={["17:00", "18:00"]} dispatch={dispatch}/>);
+        render(<BookingForm timeOptions={["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]} dispatch={dispatch}/>);
 
         const timeInput = screen.getByLabelText(/time/i);
         fireEvent.change(timeInput, { target: { value: '18:00' } });
@@ -30,7 +31,7 @@ describe('BookingForm component', () => {
         fireEvent.change(guestsInput, { target: { value: '1' } });
 
         const occasionInput = screen.getByLabelText(/occasion/i);
-        fireEvent.change(occasionInput, { target: { value: 'Birthday' } });
+        fireEvent.change(occasionInput, { target: { value: 'Anniversary' } });
 
         const submitButton = screen.getByRole("button", {name: /make your reservation/i });
         fireEvent.click(submitButton);
@@ -40,6 +41,6 @@ describe('BookingForm component', () => {
         expect(dateInput.value).toBe('2025-01-28');
         expect(timeInput.value).toBe('18:00');
         expect(guestsInput.value).toBe('1');
-        expect(occasionInput.value).toBe('Birthday');
+        expect(occasionInput.value).toBe('Anniversary');
     })
 })

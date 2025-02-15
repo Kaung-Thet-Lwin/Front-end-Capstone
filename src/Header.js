@@ -2,10 +2,11 @@ import React from "react";
 import './App.css';
 import HeadLogo from './assets/Logo.svg';
 import Restaurantfood from './assets/restauranfood.jpg';
+import { Link } from 'react-router-dom';
 
-function HomePage(){
+function Header(){
     return(
-        <div className="HomePage">
+        <div className="Header">
             <React.Fragment>
                 <span className="Text-section">
                     <img className="Headlogo" src={HeadLogo} alt="HeadLogo"/>
@@ -17,7 +18,9 @@ function HomePage(){
                        recipes served with a modern<br/>
                        twist
                     </p>
-                    <button>Reserve a table</button>
+                    <Link to ="/bookingmain">
+                        <button aria-label="On Click">Reserve a table</button>
+                    </Link>
                 </span>
                 <span className="Image-section">
                     <img className="Restaurant" height={500} src={Restaurantfood} alt="Restaurantfood"/>
@@ -27,4 +30,4 @@ function HomePage(){
     );
 }
 
-export default HomePage;
+export default Header;
