@@ -1,0 +1,73 @@
+.customersay-heading{
+    text-align: center;
+    background-color: #495e57;
+    padding : 40px;
+}
+
+.customersay-heading h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.customersay-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.customersay {
+    display: flex;
+    flex-direction: column;
+    background-color: #edefee;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    align-items: left;
+    text-align: left;
+    gap: 10px;
+}
+
+.customersay img[alt="Rating"]{
+    width: 20%;
+    height: 25px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.customersay-content {
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: auto;
+}
+
+.customersay-header{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.customersay-content img[alt="Person"] {
+    width : 30%;
+    height: 75px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.person-name {
+    text-align: center;
+    flex-grow: 1;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-right: 30px;
+}
+
+.customersay-content p {
+    display: flex;
+    color: #555;
+    font-size: 15px;
+    padding: 20px;
+}

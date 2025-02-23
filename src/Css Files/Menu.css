@@ -1,0 +1,104 @@
+.menu {
+    padding: 40px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.Menuheader {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Menuheader h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 180px;
+}
+
+.Menuheader button {
+    background-color: #FFC107;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.menu-items-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    background-color: #edefee;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.menu-items img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.menu-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 15px;
+}
+
+.menu-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.menu-heading h3 {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+    margin: 0;
+}
+
+.menu-heading .price {
+    color: #E74C3C;
+    font-weight: bold;
+    text-align: right;
+}
+
+.menu-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.orderbtn {
+    background-color: #FFC107;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import './confirmedbooking.css';
+import '../Css Files/confirmedbooking.css';
 
 function ConfirmedBooking(){
     return(

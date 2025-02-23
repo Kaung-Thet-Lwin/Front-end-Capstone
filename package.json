@@ -5,7 +5,8 @@
   "main": "index.js",
   "jest": {
   "moduleNameMapper": {
-    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "testEnvironment": "jsdom"
   }
 },
 
@@ -20,7 +21,8 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.0.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "formik": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
