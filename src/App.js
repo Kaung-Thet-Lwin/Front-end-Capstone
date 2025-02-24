@@ -4,6 +4,7 @@ import Main from './Components/Main';
 import OnlineMenu from './Components/OnlineMenu';
 import CustomersSay from './Components/CustomersSay';
 import Chicago from './Components/Chicago';
+import Footer from './Components/Footer';
 import { Routes, Route } from 'react-router-dom';
 
 
@@ -18,6 +19,7 @@ function App() {
             <OnlineMenu/>
             <CustomersSay/>
             <Chicago/>
+            <Footer/>
           </>
         }/>
       </Routes>
